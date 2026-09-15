@@ -1,8 +1,7 @@
 from dotenv import load_dotenv
 from openai import OpenAI
 
-env_file_path='C:\Users\김형선\chatbot-study\customer-review-sentiment\.env'
-load_dotenv(env_file_path)
+load_dotenv()
 
 client = OpenAI()
 def get_completions(prompt, model='gpt-5-nano'):
